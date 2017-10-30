@@ -27,16 +27,21 @@ NSString *const AAPLFoodPickerViewControllerUnwindSegueIdentifier = @"AAPLFoodPi
     // A hard-coded list of possible food items. In your application, you can decide how these should
     // be represented / created.
     self.foodItems = @[
-        [AAPLFoodItem foodItemWithName:@"Wheat Bagel" joules:240000.0],
-        [AAPLFoodItem foodItemWithName:@"Bran with Raisins" joules:190000.0],
-        [AAPLFoodItem foodItemWithName:@"Regular Instant Coffee" joules:1000.0],
+        [AAPLFoodItem foodItemWithName:@"Apple" joules:240000.0],
+        [AAPLFoodItem foodItemWithName:@"Cereal (1 bowl)" joules:190000.0],
+        [AAPLFoodItem foodItemWithName:@"CokaCola" joules:1000.0],
         [AAPLFoodItem foodItemWithName:@"Banana" joules:439320.0],
-        [AAPLFoodItem foodItemWithName:@"Cranberry Bagel" joules:416000.0],
+        [AAPLFoodItem foodItemWithName:@"Bagel with CreamCheese" joules:416000.0],
         [AAPLFoodItem foodItemWithName:@"Oatmeal" joules:150000.0],
         [AAPLFoodItem foodItemWithName:@"Fruits Salad" joules:60000.0],
-        [AAPLFoodItem foodItemWithName:@"Fried Sea Bass" joules:200000.0],
-        [AAPLFoodItem foodItemWithName:@"Chips" joules:190000.0],
-        [AAPLFoodItem foodItemWithName:@"Chicken Taco" joules:170000.0]
+        [AAPLFoodItem foodItemWithName:@"Fish Dinner" joules:200000.0],
+        [AAPLFoodItem foodItemWithName:@"Applesouce (1 serving)" joules:190000.0],
+        [AAPLFoodItem foodItemWithName:@"Grilled Chicken" joules:170000.0],
+        [AAPLFoodItem foodItemWithName:@"Rotessiary Chicken" joules:170000.0],
+        [AAPLFoodItem foodItemWithName:@"Coffee with Half & Half" joules:170000.0],
+        [AAPLFoodItem foodItemWithName:@"Muffin" joules:370000.0],
+        [AAPLFoodItem foodItemWithName:@"Crossoint" joules:370000.0],
+        [AAPLFoodItem foodItemWithName:@"Lamb Chops" joules:370000.0],
     ];
 }
 

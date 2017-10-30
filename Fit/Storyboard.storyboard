@@ -360,11 +360,12 @@
                         <segue destination="WpR-zI-EVT" kind="relationship" relationship="viewControllers" id="ZQy-uD-ReX"/>
                         <segue destination="MDa-JJ-dPR" kind="relationship" relationship="viewControllers" id="R3f-9L-KDo"/>
                         <segue destination="bu6-Mt-T9C" kind="relationship" relationship="viewControllers" id="3hS-4g-1w0"/>
+                        <segue destination="tz4-GJ-SfN" kind="relationship" relationship="viewControllers" id="1B7-7C-1q5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lyK-MX-w9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-194" y="-315"/>
+            <point key="canvasLocation" x="45" y="-317"/>
         </scene>
         <!--Calories-->
         <scene sceneID="oEl-2U-Ihb">
@@ -402,6 +403,114 @@
             </objects>
             <point key="canvasLocation" x="249" y="628"/>
         </scene>
+        <!--Totals-->
+        <scene sceneID="Vmn-Lq-sxh">
+            <objects>
+                <viewController id="oS2-CI-4T7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WKa-p4-Idu"/>
+                        <viewControllerLayoutGuide type="bottom" id="pOM-sT-5f1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fgu-Xe-3Uy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Royce" translatesAutoresizingMaskIntoConstraints="NO" id="IAy-f0-rz8">
+                                <rect key="frame" x="-2" y="64" width="377" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkW-a4-UAX">
+                                <rect key="frame" x="114" y="126" width="146" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Rect-Button"/>
+                                <state key="highlighted" image="Rect-Button_Highlighted"/>
+                                <connections>
+                                    <segue destination="yBM-AH-2Vh" kind="push" id="hQF-mi-Ng9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Week Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmS-BU-5Hi">
+                                <rect key="frame" x="136" y="155" width="102" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" name="selectedMenuItemTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="1" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aaq-N7-JYc">
+                                <rect key="frame" x="114" y="294" width="146" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Rect-Button"/>
+                                <state key="highlighted" image="Rect-Button_Highlighted"/>
+                                <connections>
+                                    <segue destination="yBM-AH-2Vh" kind="push" id="l0J-ci-qwm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Month Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3x-mn-g3s">
+                                <rect key="frame" x="136" y="323" width="102" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="highlightedColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Totals" id="7ed-Yj-gb3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9jV-jG-uZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746.5" y="1451.5"/>
+        </scene>
+        <!--Totals-->
+        <scene sceneID="yrI-R2-tcw">
+            <objects>
+                <tableViewController id="yBM-AH-2Vh" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="H7W-YW-jxu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hRv-vu-eyZ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hRv-vu-eyZ" id="pst-aU-c1n">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yBM-AH-2Vh" id="3x2-Ro-ajU"/>
+                            <outlet property="delegate" destination="yBM-AH-2Vh" id="PoX-DE-oWA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Totals" id="jlt-PD-6QX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knZ-Rn-b67" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="2357"/>
+        </scene>
+        <!--Totals-->
+        <scene sceneID="1ua-Jd-gTn">
+            <objects>
+                <navigationController id="tz4-GJ-SfN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Totals" image="icon_journal" id="tHp-nh-Epy"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qzp-AX-0a3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oS2-CI-4T7" kind="relationship" relationship="rootViewController" id="mnM-ub-LEz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMk-TI-XMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="628"/>
+        </scene>
         <!--Evelyn-->
         <scene sceneID="zJH-U8-hkZ">
             <objects>
@@ -422,8 +531,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Rect-Button" width="140" height="73"/>
+        <image name="Rect-Button_Highlighted" width="140" height="70"/>
+        <image name="Royce" width="320" height="480"/>
         <image name="icon_calculator" width="25" height="25"/>
         <image name="icon_food" width="25" height="25"/>
+        <image name="icon_journal" width="27" height="25"/>
         <image name="icon_woman" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hQF-mi-Ng9"/>
+    </inferredMetricsTieBreakers>
 </document>
